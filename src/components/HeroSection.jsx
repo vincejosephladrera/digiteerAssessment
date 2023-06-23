@@ -3,15 +3,15 @@ import HeroImage from "../assets/HeroImage.jpg";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#234E8F] grid grid-cols-1">
-      <div className="object-cover">
-        <img src={HeroImage} alt="" className="w-[100%] mobile-hero-image" />
+    <div className="bg-[#234E8F] grid grid-cols-1 lg:grid-cols-2">
+      <div className="object-cover lg:hidden">
+        <img src={HeroImage} alt="" className="w-[100%]" />
       </div>
-      <div className="flex justify-center items-start flex-col gap-[24px] py-10 px-5">
-        <h1 className="text-[24px] text-white font-bold">
+      <div className="flex justify-center items-start flex-col gap-[24px] py-10 px-5 mx-auto">
+        <h1 className="text-[24px] text-white font-bold lg:text-[32px] lg:max-w-[380px]">
           Harness the power of employee benefits for your company
         </h1>
-        <h2 className="text-[16px] text-white">
+        <h2 className="text-[16px] text-white font-light lg:max-w-[475px]">
           Bnfts is your expert partner in developing employee benefits strategies that effectively
           maximize employee engagement and satisfaction.
         </h2>
@@ -19,7 +19,7 @@ const HeroSection = () => {
           Discover How
         </h2>
       </div>
-      <div className="object-cover hidden">
+      <div className="object-cover hidden lg:block">
         <img src={HeroImage} alt="" className="w-[100%]" />
       </div>
     </div>

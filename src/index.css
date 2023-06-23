@@ -13,3 +13,13 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .forBackground {
+    background-image: url(../src/assets/Group\ 1994.png), url(../src/assets/Group\ 1995.png),
+      url(../src/assets/Group\ 1993.png);
+    background-repeat: no-repeat;
+    background-size: 120px, 180px, 180px;
+    background-position: 430px 60px, 248px 10px, 320px 2px;
+  }
+}
