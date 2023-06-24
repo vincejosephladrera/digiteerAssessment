@@ -4,7 +4,7 @@ import FacebookLogo from "../assets/Vector.png";
 import InstagramLogo from "../assets/ant-design_instagram-filled.png";
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 max-w-[1084px] mx-auto lg:grid-cols-4 py-10 px-5">
+    <div className="flex flex-col lg:flex-row max-w-[1084px] mx-auto  py-10 px-5 gap-10">
       <div className="flex flex-col gap-4 items-start">
         <FooterLogo />
         <h2 className="text-[16px] lg:flex-initial lg:w-[250px]">
@@ -22,15 +22,19 @@ const Footer = () => {
         <h2 className="font-light text-[#234E8F] lg:text-[14px]">Risk Management</h2>
         <h2 className="font-light text-[#234E8F] lg:text-[14px]">Insurance</h2>
       </div>
-      <div className="hidden lg:block place-self-center mb-auto">
-        <h1 className="text-[#234E8F] font-semibold lg:text-[18px]">Our Partners</h1>
-        <h2 className="font-light text-[#234E8F] lg:text-[14px]">Gallagher</h2>
-        <h2 className="font-light text-[#234E8F] lg:text-[14px]">ERM</h2>
-        <h2 className="font-light text-[#234E8F] lg:text-[14px]">Gallagher Communication</h2>
-        <h1 className="text-[#234E8F] font-semibold lg:text-[18px]">Quick Links</h1>
-        <h2 className="font-light text-[#234E8F] lg:text-[14px]">About</h2>
-        <h2 className="font-light text-[#234E8F] lg:text-[14px]">Contact</h2>
-        <h2 className="font-light text-[#234E8F] lg:text-[14px]">Insights</h2>
+      <div className="hidden lg:flex lg:flex-col gap-5">
+        <div>
+          <h1 className="text-[#234E8F] font-semibold lg:text-[18px]">Our Partners</h1>
+          <h2 className="font-light text-[#234E8F] lg:text-[14px]">Gallagher</h2>
+          <h2 className="font-light text-[#234E8F] lg:text-[14px]">ERM</h2>
+          <h2 className="font-light text-[#234E8F] lg:text-[14px]">Gallagher Communication</h2>
+        </div>
+        <div>
+          <h1 className="text-[#234E8F] font-semibold lg:text-[18px]">Quick Links</h1>
+          <h2 className="font-light text-[#234E8F] lg:text-[14px]">About</h2>
+          <h2 className="font-light text-[#234E8F] lg:text-[14px]">Contact</h2>
+          <h2 className="font-light text-[#234E8F] lg:text-[14px]">Insights</h2>
+        </div>
       </div>
       <div className="lg:place-self-center">
         <h1 className="text-[#234E8F] font-semibold lg:text-[18px] mb-3">
@@ -41,24 +45,24 @@ const Footer = () => {
             <label htmlFor="first-name">First Name *</label>
             <input
               type="text"
-              placeholder="eg.Juan"
-              className="border-solid border-[#DCDCDC] border-2 lg:w-[100%] h-[41px] p-5"
+              placeholder="e.g.Juan"
+              className="border-solid border-[#DCDCDC] border-2 lg:w-[345px] h-[41px] p-5"
             />
           </div>
           <div className="grid grid-cols-1">
             <label htmlFor="last-name">Last Name *</label>
             <input
               type="text"
-              placeholder="eg. Dela Cruz"
-              className="border-solid border-[#DCDCDC] border-2 lg:w-[100%] h-[41px] p-5"
+              placeholder="e.g. Dela Cruz"
+              className="border-solid border-[#DCDCDC] border-2 lg:w-[345px] h-[41px] p-5"
             />
           </div>
           <div className="grid grid-cols-1">
             <label htmlFor="email">Email *</label>
             <input
               type="email"
-              placeholder="eg. Dela Cruz"
-              className="border-solid border-[#DCDCDC] border-2 lg:w-[100%] h-[41px] p-5"
+              placeholder="e.g. j_delacruz@email.com"
+              className="border-solid border-[#DCDCDC] border-2 lg:w-[345px] h-[41px] p-5"
             />
           </div>
 

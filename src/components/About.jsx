@@ -12,7 +12,7 @@ import { ReactComponent as Group15 } from "../assets/Group 15.svg";
 const About = () => {
   return (
     <div className=" bg-white">
-      <section className="mx-auto lg:max-w-[1269px] lg:rounded-[20px] bg-white lg:min-h-[533px] lg:relative lg:top-[-50px] lg:shadow-xl lg:pb-10">
+      <section className="mx-auto lg:max-w-[1269px] lg:rounded-[20px] bg-white lg:min-h-[533px] lg:relative lg:top-[-80px] lg:shadow-xl lg:pb-10 lg:z-[0]">
         <div className="flex">
           <div className="px-5 py-10 flex flex-col gap-[16px] lg:px-10">
             <h1 className="font-bold text-[24px] lg:text-[32px] lg:w-[535px]">

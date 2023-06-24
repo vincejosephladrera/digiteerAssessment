@@ -36,7 +36,7 @@ const News = () => {
       <div className="flex justify-center flex-wrap gap-5">
         {articles.map((article) => {
           return (
-            <div className="max-w-[345px]">
+            <div className="max-w-[345px]" key={article.id}>
               <img src={article.icon} alt="" />
               <div className="flex flex-col gap-3 pt-5">
                 <h1 className="font-bold">{article.name}</h1>

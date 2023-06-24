@@ -46,7 +46,7 @@ const FieldOfWork = () => {
                 <h1 className="text-[#234E8F] font-semibold">{service.name}</h1>
               </div>
               <h2>{service.description}</h2>
-              <h2 className="bg-[#66ECBC] text-[#234E8F] font-medium flex flex-initial width-[305px] h-[48px] items-center justify-center rounded-md">
+              <h2 className="bg-[#66ECBC] text-[#234E8F] font-medium flex flex-initial width-[305px] h-[48px] items-center justify-center rounded-md hover:bg-[#234E8F] hover:text-[#66ECBC] cursor-pointer transition-all duration-700">
                 {service.buttonLabel}
               </h2>
             </div>

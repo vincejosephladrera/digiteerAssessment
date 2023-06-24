@@ -15,7 +15,7 @@ const HeroSection = () => {
           Bnfts is your expert partner in developing employee benefits strategies that effectively
           maximize employee engagement and satisfaction.
         </h2>
-        <h2 className="text-[16px] text-[#234E8F] bg-[#66ECBC] w-[156px] h-[48px] flex justify-center items-center rounded-md">
+        <h2 className="text-[16px] text-[#234E8F] bg-[#66ECBC] w-[156px] h-[48px] flex justify-center items-center rounded-md cursor-pointer hover:bg-white transition-all duration-700">
           Discover How
         </h2>
       </div>
