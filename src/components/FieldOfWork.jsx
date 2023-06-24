@@ -2,7 +2,6 @@ import React from "react";
 import Group37 from "../assets/Group 37.png";
 import Group38 from "../assets/Group 38.png";
 import Group39 from "../assets/Group 39.png";
-import Group1995 from "../assets/Group 1995.png";
 
 const FieldOfWork = () => {
   const services = [

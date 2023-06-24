@@ -34,3 +34,18 @@ body::-webkit-scrollbar {
   background-color: transparent;
   transition: all 400ms ease-in-out;
 }
+
+#floatingBox {
+  z-index: 50;
+}
+
+@media screen and (min-width: 1024px) {
+  #c-bar {
+    display: none;
+  }
+}
+#c-bar {
+  background-color: white;
+  width: 320px;
+  height: 100vh;
+}
