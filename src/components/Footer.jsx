@@ -2,9 +2,19 @@ import React from "react";
 import { ReactComponent as FooterLogo } from "../assets/footerlogo.svg";
 import FacebookLogo from "../assets/Vector.png";
 import InstagramLogo from "../assets/ant-design_instagram-filled.png";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row max-w-[1084px] mx-auto  py-10 px-5 gap-10">
+    <motion.div
+      className="flex flex-col lg:flex-row max-w-[1084px] mx-auto  py-10 px-5 gap-10"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
+      transition={{ duration: 3 }}
+      initial="hidden"
+      whileInView="visible"
+    >
       <div className="flex flex-col gap-4 items-start">
         <FooterLogo />
         <h2 className="text-[16px] lg:flex-initial lg:w-[250px]">
@@ -74,7 +84,7 @@ const Footer = () => {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

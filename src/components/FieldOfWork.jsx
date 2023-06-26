@@ -2,7 +2,7 @@ import React from "react";
 import Group37 from "../assets/Group 37.png";
 import Group38 from "../assets/Group 38.png";
 import Group39 from "../assets/Group 39.png";
-
+import { motion } from "framer-motion";
 const FieldOfWork = () => {
   const services = [
     {
@@ -32,8 +32,28 @@ const FieldOfWork = () => {
   ];
   return (
     <div className="bg-gradient-to-b from-[#F0F7FF] to-[#FFFFFF] py-10">
-      <h1 className="text-center font-bold text-[24px] mb-5">Our field of work</h1>
-      <div className="flex  px-5 gap-5 justify flex-wrap max-w-[1200px] mx-auto mb-10">
+      <motion.h1
+        className="text-center font-bold text-[24px] mb-5"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        transition={{ duration: 3 }}
+        initial="hidden"
+        whileInView="visible"
+      >
+        Our field of work
+      </motion.h1>
+      <motion.div
+        className="flex  px-5 gap-5 justify flex-wrap max-w-[1200px] mx-auto mb-10"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        transition={{ duration: 3 }}
+        initial="hidden"
+        whileInView="visible"
+      >
         {services.map((service) => {
           return (
             <div
@@ -51,9 +71,18 @@ const FieldOfWork = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
       <div>
-        <div className="grid grid-cols-1 gap-5 bg-[#668CF2] max-w-[1105px] min-h-[296px] px-5 py-10 lg:py-0 lg:pr-0 rounded-lg mx-auto lg:grid-cols-2 lg:place-content-streetch">
+        <motion.div
+          className="grid grid-cols-1 gap-5 bg-[#668CF2] max-w-[1105px] min-h-[296px] px-5 py-10 lg:py-0 lg:pr-0 rounded-lg mx-auto lg:grid-cols-2 lg:place-content-streetch"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          transition={{ duration: 3 }}
+          initial="hidden"
+          whileInView="visible"
+        >
           <div className="grid place-content-center">
             <h1 className="text-[24px] text-white font-bold">Ready to take advantage of Bnfts?</h1>
             <h2 className="text-white font-light">
@@ -67,7 +96,7 @@ const FieldOfWork = () => {
               Schedule a Free audit
             </h2>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

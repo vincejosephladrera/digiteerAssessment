@@ -2,6 +2,7 @@ import React from "react";
 import Rectangle26 from "../assets/Rectangle 26.png";
 import Rectangle48 from "../assets/Rectangle 48.png";
 import Rectangle49 from "../assets/Rectangle 49.png";
+import { motion } from "framer-motion";
 
 const News = () => {
   const articles = [
@@ -31,7 +32,16 @@ const News = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center mx-auto gap-5 px-5 py-10">
+    <motion.div
+      className="flex flex-col items-center mx-auto gap-5 px-5 py-10"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
+      transition={{ duration: 3 }}
+      initial="hidden"
+      whileInView="visible"
+    >
       <h1 className="font-bold text-[24px] text-center">Get the latest news & insights</h1>
       <div className="flex justify-center flex-wrap gap-5">
         {articles.map((article) => {
@@ -50,7 +60,7 @@ const News = () => {
       <h2 className="px-5 bg-[#66ECBC] rounded-md text-[#234E8F] font-medium min-h-[48px] text-center flex items-center">
         See more of our case studies & insights
       </h2>
-    </div>
+    </motion.div>
   );
 };
 

@@ -8,6 +8,7 @@ import { ReactComponent as Group25 } from "../assets/Group 25.svg";
 import ImageFour from "../assets/image 4.png";
 import Gallagher from "../assets/image 2.png";
 import { ReactComponent as Group15 } from "../assets/Group 15.svg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -63,7 +64,16 @@ const About = () => {
         </div>
       </section>
       <section className="px-3 flex flex-col gap-10 mt-10 lg:items-center pb-12">
-        <div className="flex flex-col gap-2 lg:flex-row-reverse lg:items-center lg:gap-5 md:max-w-[720px] mx-auto lg:max-w-none">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          transition={{ duration: 3 }}
+          initial="hidden"
+          whileInView="visible"
+          className="flex flex-col gap-2 lg:flex-row-reverse lg:items-center lg:gap-5 md:max-w-[720px] mx-auto lg:max-w-none"
+        >
           <img src={ImageFive} alt="" className="flex-1 rounded-md lg:flex-initial lg:w-[535px]" />
           <div className="flex-1 lg:flex-initial lg:w-[535px]">
             <h1 className="font-bold text-[18px] mb-4 lg:text-[24px]">
@@ -75,8 +85,18 @@ const About = () => {
               the strategy development and implementation.
             </h2>
           </div>
-        </div>
-        <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-5 md:max-w-[720px] mx-auto lg:max-w-none">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-5 md:max-w-[720px] mx-auto lg:max-w-none"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          transition={{ duration: 3 }}
+          initial="hidden"
+          whileInView="visible"
+        >
           <img src={ImageSix} alt="" className="flex-1 rounded-md lg:flex-initial lg:w-[535px]" />
           <div className="flex-1 lg:flex-initial lg:w-[535px]">
             <h1 className="font-bold text-[18px] mb-4 lg:text-[24px]">
@@ -87,8 +107,17 @@ const About = () => {
               continue to move forward until all your business goals are met.
             </h2>
           </div>
-        </div>
-        <div className="flex flex-col gap-2 lg:flex-row-reverse lg:items-center lg:gap-5 md:max-w-[720px] mx-auto lg:max-w-none">
+        </motion.div>
+        <motion.div
+          className="flex flex-col gap-2 lg:flex-row-reverse lg:items-center lg:gap-5 md:max-w-[720px] mx-auto lg:max-w-none"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          transition={{ duration: 3 }}
+          initial="hidden"
+          whileInView="visible"
+        >
           <img src={ImageSeven} alt="" className="flex-1 rounded-md lg:flex-initial lg:w-[535px]" />
           <div className="flex-1 lg:flex-initial lg:w-[535px]">
             <h1 className="font-bold text-[18px] mb-4 lg:text-[24px]">100% Client Commitment</h1>
@@ -98,7 +127,7 @@ const About = () => {
               expert network, we believe we can face any challenge and succeed.
             </h2>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
