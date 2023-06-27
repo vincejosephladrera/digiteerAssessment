@@ -49,3 +49,23 @@ body::-webkit-scrollbar {
   width: 320px;
   height: 100vh;
 }
+
+@media screen and (min-width: 1024px) {
+  #hero {
+    background: url("./assets/Group\ 1992.png");
+    background-repeat: no-repeat;
+    background-size: 520px 392px;
+    background-position: -8% 22%;
+    background-color: #234e8f;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  #hero {
+    background: url("./assets/Group\ 1992.png");
+    background-repeat: no-repeat;
+    background-size: 520px 392px;
+    background-position: 0px 0px;
+    background-color: #234e8f;
+  }
+}

@@ -3,7 +3,7 @@ import HeroImage from "../assets/HeroImage.jpg";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#234E8F] grid grid-cols-1 lg:grid-cols-2">
+    <div className="bg-[#234E8F] grid grid-cols-1 lg:grid-cols-2" id="hero">
       <div className="object-cover lg:hidden">
         <img src={HeroImage} alt="" className="w-[100%]" />
       </div>
